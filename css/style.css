@@ -136,7 +136,7 @@ nav {
   font-size: 1.1rem;
 }
 .button-project {
-  width: 20%;
+  width: 4rem;
   font-size: 16px;
 }
 .button-project button {
@@ -202,8 +202,5 @@ nav {
   }
   .card-project {
     width: 230px;
-  }
-  .button-project {
-    width: 30%;
   }
 }
