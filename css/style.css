@@ -10,6 +10,10 @@
   font-style: normal;
   color: var(--text-color);
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 button {
   background-color: transparent;
   border: 0px;
@@ -21,17 +25,22 @@ header {
   background-color: var(--primary-color);
   margin: 5px 5px 0px 5px;
   border-radius: 20px;
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
 }
 nav {
   width: 100%;
 }
 .list-links {
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .button-default {
@@ -184,6 +193,40 @@ nav {
   box-shadow: rgb(203, 209, 216) 0px 20px 30px -10px;
 }
 
+@media screen and (max-width: 480px) {
+  header {
+    height: 220px;
+  }
+  .list-links {
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .button-default {
+    width: 80%;
+  }
+  .list-links li {
+    width: 80%;
+    text-align: center;
+  }
+  .container-informations {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-informations {
+    text-align: center;
+    align-items: center;
+  }
+  .card-informations p {
+    text-align: center;
+  }
+
+  .contaier-technologies {
+    gap: 10px;
+  }
+}
 @media screen and (min-width: 600px) {
   header {
     margin: 15px 15px 0px 15px;
