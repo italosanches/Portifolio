@@ -71,13 +71,13 @@ nav {
   display: inline-block;
   width: 200px;
   border-radius: 50%;
-  border: 5px solid var(--primary-color);
+  border: 4px solid var(--primary-color);
 }
 .card-informations {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 0px 5px 0px 5px;
+  gap: 1.4rem;
+  padding: 0px 4px 0px 4px;
 }
 .card-informations h2 {
   font-weight: 600;
@@ -85,19 +85,19 @@ nav {
 }
 .card-informations p {
   text-align: left;
-  line-height: 25px;
+  line-height: 26px;
   text-wrap: wrap;
   width: 100%;
   font-size: 1rem;
 }
 .container-information-network {
-  border: 3px solid var(--primary-color);
+  border: 4px solid var(--primary-color);
   width: fit-content;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: -15px;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: -16px;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 /*projetos */
@@ -113,16 +113,21 @@ nav {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
+.title {
+  margin-bottom: 2rem;
+}
 .container-projects {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  margin: 15px 15px 0px 15px;
+  gap: 20px;
+  margin: 10px 10px 0px 10px;
   /* padding: 0.2rem 0.1rem 1rem 0.5rem; */
 }
 .card-project {
-  max-width: 70%;
+  max-width: 100%;
+  max-width: 400px;
   flex-direction: column;
   gap: 10px;
   text-align: left;
@@ -138,14 +143,14 @@ nav {
 .container-information-project {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 5px;
+  gap: 6px;
   align-items: baseline;
 }
 .text-information {
   font-size: 1.1rem;
 }
 .button-project {
-  width: 4rem;
+  max-width: 140px;
   font-size: 16px;
 }
 .button-project button {
@@ -159,14 +164,15 @@ nav {
 }
 .contaier-technologies {
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   justify-content: center;
   gap: 30px;
+  justify-items: center;
+  flex-wrap: wrap;
 }
 .card-technology {
   width: 120px;
-  border: 3px solid var(--primary-color);
+  border: 4px solid var(--primary-color);
   border-radius: 10px;
   height: 100px;
   display: flex;
@@ -222,14 +228,21 @@ nav {
   .card-informations p {
     text-align: center;
   }
-
-  .contaier-technologies {
-    gap: 10px;
-  }
 }
 @media screen and (min-width: 600px) {
   header {
     margin: 15px 15px 0px 15px;
+  }
+  .container-informations {
+    justify-items: center;
+  }
+  .profile-photo {
+    width: 80%;
+    max-width: 300px;
+  }
+  .card-project {
+    width: 100%;
+    max-width: 240px;
   }
   .card-informations p {
     font-size: 1.1rem;
@@ -245,5 +258,22 @@ nav {
   }
   .card-project {
     width: 230px;
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-links {
+    justify-content: space-evenly;
+  }
+  .container-projects {
+    gap: 60px;
+  }
+  .card-project {
+    width: 100%;
+    max-width: 300px;
+  }
+  .card-technology {
+    width: 180px;
   }
 }
