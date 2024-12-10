@@ -42,6 +42,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .button-default {
   padding: 10px;
   border-radius: 10px;
@@ -198,6 +199,13 @@ nav {
   box-shadow: rgb(203, 209, 216) 0px 20px 30px -10px;
 }
 
+.button-default:active {
+  background-color: var(--text-color);
+  border-color: var(--background-color);
+  color: var(--primary-color);
+  transform: scale(0.96); /* Efeito de encolher ligeiramente o botão */
+}
+
 @media screen and (max-width: 480px) {
   header {
     height: 220px;
@@ -263,7 +271,14 @@ nav {
 
 @media screen and (min-width: 768px) {
   .list-links {
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
+  }
+  .list-links li {
+    width: 25%;
+    max-width: 168px;
+    display: flex;
+    justify-content: center;
   }
   .container-projects {
     gap: 60px;
@@ -276,9 +291,19 @@ nav {
     width: 180px;
   }
   .button-link {
-    display: block;
     text-align: center;
-    max-width: 300px;
     width: 100%;
+  }
+}
+@media screen and (min-width: 998px) {
+  .list-links {
+    justify-content: center;
+    gap: 3rem;
+  }
+  .list-links li {
+    width: 25%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
   }
 }
