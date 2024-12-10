@@ -42,7 +42,6 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .button-default {
   padding: 10px;
   border-radius: 10px;
@@ -275,5 +274,11 @@ nav {
   }
   .card-technology {
     width: 180px;
+  }
+  .button-link {
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
   }
 }
